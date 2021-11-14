@@ -1,38 +1,341 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1% 8% 0% 8%;
+    overflow: hidden;
+    background:#151618;
+    background:#4D38CD;
+    background-size: cover;
+    box-sizing: border-box ;
+
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+    height:40px;
+    background:url(https://pbs.twimg.com/profile_images/1273850207252307969/hjEVMsAe.jpg);
+    background-size: cover;
+    animation: rotate 10s linear 0s infinite;
+    border-radius: 4px;
+
+}
+
+#name{
+    color: white;
+    margin-left: 20px;
+}
+.menu-icon{
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right:30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: rgb(253, 7, 40);
+    
+}
+
+
+
+ @media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background: #222831;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 2;
+        overflow: hidden;
+        transition: 1s;
+        text-align:center;
+    }
+    
+    nav ul li{
+        display: block ;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width:100%;
+        clip-path: polygon(100% 0%, 80% 50%, 100% 100%, 0 100%, 21% 52%, 0 0);
+        font-size:20px;
+        font-weight: 999 ;
+    }
+    nav ul li:hover{
+      background-color:#393E46 ;
+    }
+    nav ul li a{
+        color: white;
+        
+    }
+    .menu-icon{
+        display: block;
+    }
+    
+} 
+
+
+/* Login Page */
+
+.wrapper{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #34495e;
+            background-image: url(https://images.unsplash.com/photo-1635830625698-3b9bd74671ca?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
+            backdrop-filter: blur(15px);
+            /* background: url(https://static.statusqueen.in/mobilewallpaper/thumbnail/mobile_wallpaper__1-471.jpg) no-repeat;  */
+            background-size: cover; 
+          }
+
+.box
+ {
+            width: 300px;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           /* background-color: #191919;*/
+            text-align: center;
+        }
+
+
+ .box h1 
+ {
+            color: white;
+            text-transform: none;
+            font-weight: 200;
+        }   
+
+  .box input[type="text"],
+  .box input[type="email"],
+  .box input[type="password"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            border-radius: 24px;
+            color: white;
+            transition: 0.25s;
+        }
+
+  .box input[type="text"]:focus,
+  .box input[type="email"]:focus,
+  .box input[type="password"]:focus {
+            width: 280px;
+            /* border-image: linear-gradient(45deg, #2ecc71,#3498db); */
+            border-color: #2ecc71;
+        }
+
+        .box input[type="submit"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 50px;
+            width: 136px;
+            outline: none;
+            border-radius: 24px;
+            color: white;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+
+        .box input[type="submit"]:hover {
+            background-color:rgb(5, 5, 5);
+        }  
+        
+
+/* Cards */
+
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  
+/* .card{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1634059044563-ec2dc036f1d7?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxN3x0b3dKWkZza3BHZ3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.card p{ 
+  color: #fff;
+  font-size: 18px;
+} */
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: #fff;
+  background-image: url(https://images.unsplash.com/photo-1634059044563-ec2dc036f1d7?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxN3x0b3dKWkZza3BHZ3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front .stack{
+  background-image: linear-gradient(90deg, white, rgb(184, 184, 214));
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
   color: white;
+  transform: rotateY(180deg);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/* back card design */
+
+.avater{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+
+.mid-wrap{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.mid-wrap p, button, .mid-hr, hr, h3{
+  margin-top: 10px;
+}
+
+.hr-mid{
+  width: 100%;
+  border: 2px solid;
+  border-image:linear-gradient(45deg,red,blue) 10;
+  border-radius: 3px;
+}
+
+.mid-wrap button {
+  padding: 3px;
+  background-color: dodgerblue;
+  border:2px solid;
+  margin: 10px;
+  border-image:linear-gradient(45deg,red,blue) 10;
+}
+
+.mid-wrap p{
+  background-image: linear-gradient(45deg, white, rgb(184, 184, 214));
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
+}
+
+.dev {
+  background-image: linear-gradient(90deg,rgb(110, 79, 79),rgb(76, 76, 124));
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
+}
+
+.card-wrapper{
+  width: 85%;
+  margin: auto;
+}
+
+.skills button{
+    color: #fff;
+    border-radius:5px;
+    border:2px solid transparent;
+    background:linear-gradient(45deg,red,blue) border-box;
+    /* -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); */
+    /* -webkit-mask-composite: destination-out;  */
+    mask-composite: exclude;
 }
