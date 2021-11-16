@@ -12,7 +12,7 @@ const Card = () => {
                     <div className="card-wrapper">
                         <h1 className="dev">Dev</h1>
                         <div className="avater">
-                            <img src="https://images.unsplash.com/photo-1634059044563-ec2dc036f1d7?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxN3x0b3dKWkZza3BHZ3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="avater" />
+                            <img className="img" src="https://images.unsplash.com/photo-1634059044563-ec2dc036f1d7?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxN3x0b3dKWkZza3BHZ3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="avater" />
                         </div>
                         <div className="mid-wrap">
                             <p>Tasha</p>
