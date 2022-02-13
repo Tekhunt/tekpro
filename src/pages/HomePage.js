@@ -1,16 +1,15 @@
 import React from 'react'
-import Card from '../Components/Card'
 import Stack from '../Components/Stack'
 import Header from '../Components/Header'
-import Footer from '../Components/Footer'
-import FooterMin from '../Components/FooterMin'
-// import minFooter from '../Components/minFooter'
+import HeroPage from '../Components/HeroPage'
 
 export const HomePage = () => {
     return (
-        <div>
+        <div className="smooth">
+            <div className="hero-wrap">
+                <HeroPage />
+            </div>
             <div className="app-wrap">
-                <Card />
                 <div className="header">
                 <Header caption="Stacks" />
                 </div>
@@ -27,7 +26,7 @@ export const HomePage = () => {
                         VB.NET are used for frontend development.' />
             
                 </div>
-                <div className="header">
+                <div className="header stack-projects">
                 <Header caption="Stack Projects" />
                 </div>
 
@@ -41,10 +40,6 @@ export const HomePage = () => {
             
                 </div>
             </div>  
-            <div className="home-footer">
-                <Footer />
-                <FooterMin />
-            </div> 
           
         </div>
     )

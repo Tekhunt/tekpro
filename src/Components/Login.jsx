@@ -1,7 +1,9 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import Help from './Help'
 // import '../App.css';
 
-const Login = ({caption, placeholder, type, value}) => {
+const Login = () => {
     return (
       
         <div className="wrapper">
@@ -15,8 +17,17 @@ const Login = ({caption, placeholder, type, value}) => {
 
                 <input type="submit" value="Login" />
 
+                <div className="af-wrapper">
+                    <p className="line1">New to TEK-PRO? <Link to='/register'> Sign Up </Link></p>
+                    <p className="line2"> <Link to='/resetpassword'> Forgot your password? </Link></p>        
+                </div>
+        
+
             </from>
-                        
+
+            <Help />
+
+            
           
         </div>
     );

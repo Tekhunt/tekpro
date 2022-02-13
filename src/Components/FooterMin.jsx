@@ -18,8 +18,8 @@ const FooterMin = () => {
 
             <div className="min-bottom">
                 <p className="p">Terms Conditions</p>
-                <p className="p">Copyright &copy; 2021 TEK-Pro. All Rights Reserved</p>
-                <p className="p">Privacy Policy</p>
+                <p className="p">Copyright &copy; 2021 TEK-PRO. All Rights Reserved</p>
+                <p className="p">Privacy & Policy</p>
             </div>
             
         </div>
