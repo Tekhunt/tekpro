@@ -873,6 +873,7 @@ nav ul li a:hover{
   color: white;
   background-color: #57466d;
   border-image:linear-gradient(45deg, rgb(85, 77, 77),#4b1248) 10;
+  padding: 10px 10px;
 }
 
 .hero-dev button a{
