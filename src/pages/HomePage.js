@@ -4,7 +4,7 @@ import Stack from '../Components/Stack'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import FooterMin from '../Components/FooterMin'
-
+// import minFooter from '../Components/minFooter'
 
 export const HomePage = () => {
     return (
