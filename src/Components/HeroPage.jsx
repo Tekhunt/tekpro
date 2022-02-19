@@ -14,8 +14,8 @@ const HeroPage = () => {
                     Engineers with loads of experinces and accomplish your task
                 </p>
                 <div className="connect-btn">
-                    <button>Connect now</button>
-                    <button>Contact TEK-PRO</button>
+                    <button><Link to='/login'> Connect Now</Link> </button>
+                    <button className='contact-tekpro'><Link to='/contact'> Contact TEK-PRO </Link></button>
                 </div>
             </div>
 
@@ -36,4 +36,4 @@ const HeroPage = () => {
     )
 }
 
-export default HeroPage
+export default React.memo(HeroPage)
